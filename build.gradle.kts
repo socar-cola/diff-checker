@@ -1,5 +1,5 @@
 group = "kr.cola"
-version = "0.0.1"
+version = "0.0.4"
 
 repositories {
     mavenCentral()
@@ -38,11 +38,14 @@ dependencies {
 }
 
 publishing {
-    publications {
-        register<MavenPublication>("gpr") {
-            from(components["java"])
-        }
-    }
+    // publications {
+    //     register<MavenPublication>("gpr") {
+    //         // groupId = "kr.cola"
+    //         // artifactId = "diff-checker"
+    //         // version = "0.0.1"
+    //         from(components["java"])
+    //     }
+    // }
 
     repositories {
         maven {
